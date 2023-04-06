@@ -4,7 +4,6 @@ const lastNameInput = document.querySelector(".last-name-input");
 const emailInput = document.querySelector(".email-input");
 const passwordInput = document.querySelector(".password-input");
 const submitButton = document.querySelector(".submit-button");
-const errorIcons = document.querySelectorAll(".error-icon");
 
 freeTrialForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -49,7 +48,7 @@ function validateLastName() {
 function validateEmail() {
   const emailErrorMessage = document.getElementById("emailErrorMessage");
   const emailErrorIcon = document.getElementById("emailErrorIcon");
-  const emailValidation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const emailValidation = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
   if (emailInput.value.length === 0) {
     emailErrorMessage.style.display = "inline";

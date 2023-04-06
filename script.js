@@ -5,8 +5,8 @@ const emailInput = document.querySelector(".email-input");
 const passwordInput = document.querySelector(".password-input");
 const submitButton = document.querySelector(".submit-button");
 
-freeTrialForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+freeTrialForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 });
 
 submitButton.addEventListener("click", function () {
@@ -14,11 +14,12 @@ submitButton.addEventListener("click", function () {
   validateLastName();
   validateEmail();
   validatePassword();
-
 });
 
 function validateFirstName() {
-  const firstNameErrorMessage = document.getElementById("firstNameErrorMessage");
+  const firstNameErrorMessage = document.getElementById(
+    "firstNameErrorMessage"
+  );
   const firstNameErrorIcon = document.getElementById("firstNameErrorIcon");
 
   if (firstNameInput.value.length === 0) {
@@ -27,7 +28,7 @@ function validateFirstName() {
     firstNameErrorIcon.style.display = "inline";
     firstNameInput.style.border = "2px solid red";
   } else {
-        firstNameInput.style.border = "2px solid green";
+    firstNameInput.style.border = "2px solid green";
   }
 }
 
@@ -41,7 +42,7 @@ function validateLastName() {
     lastNameErrorIcon.style.display = "inline";
     lastNameInput.style.border = "2px solid red";
   } else {
-        lastNameInput.style.border = "2px solid green";
+    lastNameInput.style.border = "2px solid green";
   }
 }
 
@@ -56,12 +57,12 @@ function validateEmail() {
     emailErrorIcon.style.display = "inline";
     emailInput.style.border = "2px solid red";
   } else if (!emailInput.value.match(emailValidation)) {
-        emailErrorMessage.style.display = "inline";
-        emailErrorMessage.textContent = "Looks like this is not an email";
-        emailErrorIcon.style.display = "inline";
-        emailInput.style.border = "2px solid red";
+    emailErrorMessage.style.display = "inline";
+    emailErrorMessage.textContent = "Looks like this is not an email";
+    emailErrorIcon.style.display = "inline";
+    emailInput.style.border = "2px solid red";
   } else {
-        emailInput.style.border = "2px solid green";
+    emailInput.style.border = "2px solid green";
   }
 }
 
@@ -75,6 +76,6 @@ function validatePassword() {
     passwordErrorIcon.style.display = "inline";
     passwordInput.style.border = "2px solid red";
   } else {
-        passwordInput.style.border = "2px solid green";
+    passwordInput.style.border = "2px solid green";
   }
 }

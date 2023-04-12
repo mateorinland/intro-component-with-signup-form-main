@@ -87,10 +87,6 @@ body {
   }
 }
 
-.text-bold {
-  font-weight: 600;
-}
-
 .form-container {
   background-color: white;
   border-radius: 0.5rem;
@@ -111,6 +107,10 @@ body {
   .free-trial-fieldset {
     padding: 2.5rem;
   }
+}
+
+.input-container {
+  width: 100%;
 }
 
 .label {

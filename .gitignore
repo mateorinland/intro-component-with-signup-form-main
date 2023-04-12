@@ -18,12 +18,8 @@
 *.md
 /design
 
-#SASS#
-_reset.css
-*map.css
-
-#npm and ESLint#
+#IDE#
 /node_modules
 package.json
 package-lock.json
-.eslintrc.json
+.eslintrc.js

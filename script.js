@@ -30,6 +30,12 @@ function validateFirstName() {
   } else {
     firstNameInput.style.border = "2px solid green";
   }
+
+  setInterval(() => {
+    firstNameErrorMessage.style.display = "none";
+    firstNameErrorIcon.style.display = "none";
+    firstNameInput.style.border = "2px solid black";
+  }, 5000);
 }
 
 function validateLastName() {
@@ -44,6 +50,12 @@ function validateLastName() {
   } else {
     lastNameInput.style.border = "2px solid green";
   }
+
+  setInterval(() => {
+    lastNameErrorMessage.style.display = "none";
+    lastNameErrorIcon.style.display = "none";
+    lastNameInput.style.border = "2px solid black";
+  }, 5000);
 }
 
 function validateEmail() {
@@ -64,6 +76,12 @@ function validateEmail() {
   } else {
     emailInput.style.border = "2px solid green";
   }
+
+  setInterval(() => {
+    emailErrorMessage.style.display = "none";
+    emailErrorIcon.style.display = "none";
+    emailInput.style.border = "2px solid black";
+  }, 5000);
 }
 
 function validatePassword() {
@@ -78,4 +96,10 @@ function validatePassword() {
   } else {
     passwordInput.style.border = "2px solid green";
   }
+
+  setInterval(() => {
+    passwordErrorMessage.style.display = "none";
+    passwordErrorIcon.style.display = "none";
+    passwordInput.style.border = "2px solid black";
+  }, 5000);
 }
